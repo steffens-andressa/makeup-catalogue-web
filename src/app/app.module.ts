@@ -16,6 +16,7 @@ import { ListComponent } from './list/list.component';
     BrowserModule,
     AppRoutingModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
