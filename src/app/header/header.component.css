@@ -1,2 +1,9 @@
 @import "~materialize-css/dist/css/materialize.css";
 @import "~material-icons/iconfont/material-icons.css";
+
+.page-header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    background-color: #986aad;
+}
