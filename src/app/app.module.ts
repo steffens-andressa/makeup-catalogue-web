@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { ListComponent } from './list/list.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductComponent } from './product/product.component';
+import { LandPageComponent } from './land-page/land-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ProductComponent } from './product/product.component';
     HeaderComponent,
     ListComponent,
     FooterComponent,
-    ProductComponent
+    ProductComponent,
+    LandPageComponent,
+    PageNotFoundComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
