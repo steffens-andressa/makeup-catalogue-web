@@ -1,0 +1,7 @@
+######################
+# IGNORE THESE FILES #
+######################
+
+.angular/
+node_modules/
+dist/
