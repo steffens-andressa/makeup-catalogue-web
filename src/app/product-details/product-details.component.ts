@@ -1,7 +1,10 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
+
 import { Product } from '../model/product';
 import { ProductComponent } from '../product/product.component';
+import { ProductService } from '../product/product.service';
 
 @Component({
   selector: 'app-product-details',
@@ -11,17 +14,16 @@ import { ProductComponent } from '../product/product.component';
 export class ProductDetailsComponent implements OnInit {
 
   public products!: Product[];
-  private a: Product = new Product(1,"Anome","Amarca","Acor","Atipo",50, new Date());
-  private b: Product = new Product(2, "Bnome", "Bmarca", "Bcor", "Btipo", 60, new Date());
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private productService: ProductService
   ) { }
 
   ngOnInit(): void {
     let idParam = this.route.snapshot.params['id'];
-    this.products = [this.a,this.b];
+    this.products = this.productService.getProducts();
   }
 
   onClickItem(p: Product) {

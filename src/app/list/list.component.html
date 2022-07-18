@@ -1,7 +1,29 @@
-<ul>
-    <li>Bases</li>
-    <li>Paletas</li>
-    <li>Sombras</li>
-    <li>Máscaras</li>
-    <li>Láṕis</li>
-</ul>
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+        <table>
+            <thead>
+                <tr>
+                    <th data-field="td-type">Name</th>
+                    <th data-field="td-type">Brand</th>
+                    <th data-field="td-value">Color</th>
+                    <th data-field="td-value">Type</th>
+                    <th data-field="td-tax">Price</th>
+                    <th data-field="td-img">Image</th>
+                    <th data-field="td-date">Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let p of this.products" (click)="onClickItem(p)">
+                    <td>{{ p.name | uppercase }}</td>
+                    <td>{{ p.brand | uppercase }}</td>
+                    <td>{{ p.color| uppercase }}</td>
+                    <td>{{ p.type| uppercase }}</td>
+                    <td>{{ p.price | currency: "BRL" }}</td>
+                    <td>{{ p.img }}<img src=p.img /></td>
+                    <td>{{ p.date | date: "dd/MM/yyyy HH:mm:ss" }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
