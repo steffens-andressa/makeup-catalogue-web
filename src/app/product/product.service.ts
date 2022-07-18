@@ -13,8 +13,7 @@ export class ProductService {
   }
 
   save(product: Product) {
-    this.products = WebStorageUtil.get(Constants.PRODUCTS_KEY);
-    console.log(JSON.stringify(this.products))
+    this.products = WebStorageUtil.get(Constants.PRODUCTS_KEY) || [];
     this.products.push(product);
     WebStorageUtil.set(Constants.PRODUCTS_KEY, this.products);
   }
@@ -38,7 +37,7 @@ export class ProductService {
   isExist(value: string): boolean {
     let result: boolean = false;
     this.products = WebStorageUtil.get(Constants.PRODUCTS_KEY);
-    this.products.forEach((p) => {
+    this.products?.forEach((p) => {
       if (p.name?.valueOf() == value?.valueOf()) {
         result = true;
       }
