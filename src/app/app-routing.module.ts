@@ -9,7 +9,11 @@ const routes: Routes = [
   { path: '', component: LandPageComponent },
   {
     path: 'product',
-    component: ProductComponent
+    component: ProductComponent,
+    children: [
+      { path: 'add', component: ProductComponent },
+      { path: 'edit', component: ProductComponent }
+    ]
   },
   { path: 'product/:id', component: ProductDetailsComponent },
   { path: '**', component: PageNotFoundComponent }

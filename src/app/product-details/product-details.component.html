@@ -8,6 +8,7 @@
                     <th data-field="td-value">Color</th>
                     <th data-field="td-value">Type</th>
                     <th data-field="td-tax">Price</th>
+                    <th data-field="td-img">Image</th>
                     <th data-field="td-date">Date</th>
                 </tr>
             </thead>
@@ -22,6 +23,7 @@
                     <td>{{ p.color| uppercase }}</td>
                     <td>{{ p.type| uppercase }}</td>
                     <td>{{ p.price | currency: "BRL" }}</td>
+                    <td>{{ p.img }}<img src=p.img /></td>
                     <td>{{ p.date | date: "dd/MM/yyyy HH:mm:ss" }}</td>
                 </tr>
             </tbody>
