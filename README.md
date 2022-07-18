@@ -25,3 +25,28 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Endereço de Deploy - GitHub Pages
+https://andressa-steffens.github.io/makeup-catalogue-web/
+
+
+# Checklist
+
+- :heavy_check_mark: Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
+- :heavy_check_mark: Usar componentes de algum framework CSS (Bootstrap, Materialize ou outro)
+- :white_check_mark: Apresentar as telas com layout responsivo usando ou não algum framework CSS.
+- :heavy_check_mark: Construir páginas web com o conceito de componentes.
+- :heavy_check_mark: Criar o layout da aplicação com componentes, ou seja, o cabeçalho e rodapé precisam ser componentes.
+- :heavy_check_mark: Usar pelo menos dois tipos de data-binding (Interpolation, Property Binding, Event Binding e Two Way Data Binding).
+- :heavy_check_mark: Passar dados via hierarquia de componentes, ou seja, usando @Input ou @Output.
+- :heavy_check_mark: Mapear componentes à rotas no módulo de rotas.
+- :heavy_check_mark: Criar navegação entre páginas por meio de rotas.
+- :heavy_check_mark: Passar dados entre componentes que representam diferentes telas via parâmetros de rotas.
+- :white_check_mark:Validar campos do formulário com REGEX e apresentar os erros.
+- :heavy_check_mark: Desabilitar o botão de submit enquanto o formulário está inválido.
+- :white_check_mark: Fazer requisições a API com tratamento da resposta com Promises ou Observables.
+- :white_check_mark: Cadastrar uma entidade no JSON Server.
+- :heavy_check_mark: Apresentar uma lista de dados com a diretiva estrutural ngFor.
+- :heavy_check_mark: Usar a diretiva ngIf
+- :heavy_check_mark: Formatar a apresentação de dados com Pipes.
+- :heavy_check_mark: Build e deploy da aplicação.

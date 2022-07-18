@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href=https://andressa-steffens.github.io/makeup-catalogue-web/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "ghpages": "angular-cli-ghpages --dir=dist/makeup-catalogue-web" 
   },
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "angular-cli-ghpages": "^1.0.0",
     "angularjs-currency-input-mask": "^1.1.2",
     "material-icons": "^1.11.5",
     "materialize-css": "^1.0.0",
