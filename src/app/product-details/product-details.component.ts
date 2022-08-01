@@ -23,7 +23,11 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     let idParam = this.route.snapshot.params['id'];
-    this.products = this.productService.getProducts();
+    this.productService.getProducts().then((productList) => {
+      if(productList) {
+        this.products = productList;
+      }
+    });
   }
 
   onClickItem(p: Product) {

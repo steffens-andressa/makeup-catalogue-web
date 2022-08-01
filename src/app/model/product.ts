@@ -12,17 +12,5 @@ export class Product {
         this.id = Math.round(Math.random() * 1000);
         this.name = name;
     }
-
-    // public static clone(product: Product) {
-    //     let p: Product = new Product(product.id, product.name);
-    //     p.id = product.id;
-    //     p.name = product.name;
-    //     p.brand = product.brand;
-    //     p.color = product.color;
-    //     p.type = product.type;
-    //     p.price = product.price;
-    //     p.img = product.img;
-    //     p.date = product.date;
-    //     return p;
-    //   }
+    
 }

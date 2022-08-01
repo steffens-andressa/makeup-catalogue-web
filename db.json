@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "BT Skin",
+      "brand": "BT",
+      "color": "N20",
+      "type": "Base",
+      "price": 70,
+      "img": "",
+      "date": ""
+    },
+    {
+      "id": 2,
+      "name": "Fade in Hue",
+      "brand": "Colourpop",
+      "color": "Multi",
+      "type": "Paleta",
+      "price": 300,
+      "img": "",
+      "date": ""
+    }
+  ]
+}
