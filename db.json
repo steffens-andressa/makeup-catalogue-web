@@ -19,6 +19,12 @@
       "price": 300,
       "img": "",
       "date": ""
+    },
+    {
+      "id": 988,
+      "name": "Nome",
+      "brand": "Marca",
+      "type": "Tipo"
     }
   ]
 }
